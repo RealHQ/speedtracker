@@ -3,13 +3,13 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "Agent Pronto Home"
+name: "Agent Pronto Home (3G mobile)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
 # SpeedTracker site.
 # 
-default: true
+default: false
 
 #
 # If you want tests to be repeated automatically, you can an interval (in hours)
@@ -22,7 +22,8 @@ interval: 12
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "Cable"
+  connectivity: "3G"
+  mobile: true
   location: "Dulles:Chrome"
   runs: 3
   url: "https://agentpronto.com"
